@@ -6,10 +6,10 @@ int default_angle[4] = {75, 90, 90, 60};
 void setup()
 {
     Serial.begin(115200);
-    servo[0].attach(5);
+    servo[0].attach(7);
     servo[1].attach(6);
-    servo[2].attach(7);
-    servo[3].attach(8);
+    servo[2].attach(5);
+    servo[3].attach(2);
 
     for (size_t i = 0; i < 4; i++)
     {
