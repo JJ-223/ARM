@@ -4,11 +4,11 @@ import mediapipe as mp
 
 # config
 write_video = True
-debug = True
+debug = True       #Have to set Debug to false in order to get it to read data
 #cam_source = cv2.VideoCapture(0) # 0,1 for usb cam, "http://192.168.1.165:4747/video" for webcam
 
 if not debug:
-    ser = serial.Serial('COM4', 115200)
+    ser = serial.Serial('COM4', 115200) #different COM, serial, checking if right serial, i want these variables to change
 
 x_min = 0
 x_mid = 75
