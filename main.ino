@@ -4,13 +4,9 @@ Servo servo[4];
 int default_angle[4] = {75, 90, 90, 60};
 
 float z_angle;
-float z_x;
-float z_y;
 float z_length;
 
 float y_angle;
-float y_x;
-float y_y;
 float y_length;
 
 void setup()
