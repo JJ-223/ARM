@@ -4,10 +4,12 @@ Servo servo[4];
 int default_angle[4] = {75, 90, 90, 60};
 
 float z_angle;
-float z_length;
 
 float y_angle;
-float y_length;
+
+float comb_angle
+
+int angle_wrist
 
 void setup()
 {
@@ -48,6 +50,17 @@ void loop()
                 pre_angle[i] = angle[i];
             }
         }
+
+        z_angle = 90-servo[1].read();
+
+        y_angle = (servo[2].read()-90)*-1;
+
+        comb_angle = y_angle + z_angle;
+
+        angle_wrist = 90 - (int)comb_angle;
+
+        servo_W.write(angle_wrist);
+        
         t = millis();
     }
 
