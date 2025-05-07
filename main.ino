@@ -57,7 +57,7 @@ void loop()
 
         comb_angle = y_angle + z_angle;
 
-        angle_wrist = 90 - (int)comb_angle;
+        angle_wrist = (int)comb_angle;
 
         servo_W.write(angle_wrist);
         
